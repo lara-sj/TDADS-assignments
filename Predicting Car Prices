@@ -1,0 +1,8 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+data = pd.read_csv('car_data.csv')
+
+#select the 2nd and 3rd columns and convert them to a numpy array 
+X = data.iloc[:, 2].values.reshape(-1,)
